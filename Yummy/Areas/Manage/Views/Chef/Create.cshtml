@@ -1,0 +1,35 @@
+﻿@model Chef
+@{
+    ViewData["Title"] = "Create";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <form method="post" asp-action="create"> 
+                <div class="mb-3">
+                    <label asp-for="FullName" class="form-label">FullName</label>
+                    <input asp-for="FullName" class="form-control">
+                    <span asp-validation-for="FullName" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="Profession" class="form-label">Profession</label>
+                    <input asp-for="Profession" class="form-control">
+                    <span asp-validation-for="Profession" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="Desc" class="form-label">Desc</label>
+                    <input asp-for="Desc" class="form-control">
+                    <span asp-validation-for="Desc" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="ImageFile" class="form-label">ImageFile</label>
+                    <input asp-for="ImageFile" class="form-control">
+                    <span asp-validation-for="ImageFile" class="text-danger"></span>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+
+        </div>
+    </div>
+</div>
